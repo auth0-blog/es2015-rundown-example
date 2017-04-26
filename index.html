@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Auth0-VanillaJS</title>
-    <meta charset="utf-8">
 
-    <!-- Auth0 lock script -->
-    <script src="//cdn.auth0.com/js/lock/10.3.0/lock.min.js"></script>
+<head>
+  <title>Auth0-VanillaJS</title>
+  <meta charset="utf-8">
 
-    <script src="app.bundle.js"></script>
+  <!-- Auth0 lock script -->
+  <script src="https://cdn.auth0.com/js/auth0/8.6.0/auth0.min.js"></script>
+  <script src="https://unpkg.com/jwt-decode@2.2.0/build/jwt-decode.min.js"></script>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <body>
-    <img alt="avatar" id="avatar" style="display:none;">
-    <p>Welcome <span id="nickname"></span></p>
-    <button type="submit" id="btn-login">Sign In</button>
-    <button type="submit" id="btn-logout" style="display:none;">Sign Out</button>
-  </body>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <img alt="avatar" id="avatar" style="display:none;">
+  <p>Welcome <span id="nickname"></span></p>
+  <button type="submit" id="btn-login">Sign In</button>
+  <button type="submit" id="btn-logout" style="display:none;">Sign Out</button>
+
+  <script src="app.js"></script>
+</body>
+
 </html>
